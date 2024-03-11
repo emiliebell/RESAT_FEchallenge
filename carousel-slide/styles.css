@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.carousel {
+  position: relative;
+  width: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel-images img {
+  width: 100%;
+  display: none;
+}
+
+.carousel-images img:first-child {
+  display: block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }

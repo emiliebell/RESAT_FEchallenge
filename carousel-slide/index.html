@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Image Carousel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="carousel" onmouseover="stopAutoPlay()" onmouseout="startAutoPlay()">
+    <div class="carousel-images">
+        <img src="nunu1.jpg" alt="Image 1">
+        <img src="nunu2.jpg" alt="Image 2" style="display:none">
+        <img src="nunu3.jpg" alt="Image 3" style="display:none">
+    </div>
+    <button class="prev" onclick="moveSlide(-1)" aria-label="Previous">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)" aria-label="Next">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
