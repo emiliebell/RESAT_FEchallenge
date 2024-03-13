@@ -1,0 +1,315 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none; 
+  background-color: transparent;  
+  font-size: 25px; 
+  font-family: 'Noto Sans KR', sans-serif; 
+  margin-top: 30px;
+}
+.nav {
+  display: flex; 
+  justify-content: flex-start; 
+  gap: 10px;
+}
+
+.nav-button {
+  margin-right: 10px; 
+  margin-left: 1px; 
+  margin-top:20px;
+  color: 	#A9A9A9;
+}
+
+.line {
+  height: 0.5px;
+  background-color: #cccccc;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 700px;
+}
+
+.main-img-1 {
+  width: 88%;  
+  height: 100%;
+  margin-left:120px;
+  margin-top: 90px;
+  border-radius: 1%;
+}
+
+.main-img-2 {
+  width: 30%;  
+  height: 100%;
+  margin-right: 130px;
+  margin-top: 90px;
+  border-radius: 1%;
+}
+
+
+.image-text-container {
+  position: relative;
+  width: 100%; 
+  height: 100%;
+}
+.image-text {
+  position: absolute;
+  top: 12%;
+  left: 14%;
+  color: white;
+  font-size: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: bold;
+  text-align: left;
+} 
+.line-1 {
+  font-size: 55px;
+  line-height: 140%;
+  margin-bottom : -25px;
+}
+.line-2 {
+  font-size: 40px;
+}
+.signup {
+  display: flex;
+}
+
+.signup svg {
+  margin-right: -120px; 
+  align-self: bottom;
+}
+
+.line-3 {
+  font-size: 25px;
+}
+
+
+/* 새롭게 추가된 스타일 */
+
+/* 새롭게 추가된 스타일 */
+
+.skillup-banner-slider {
+  margin-top: 50px;
+}
+
+.new-service-slider {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.new-service-banner {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.new-service-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.new-service-banner p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 4px;
+  background-color: #ccc;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.new-service-info-box {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+.new-service-info-badge {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.new-service-info-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.new-service-info-text {  
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+
+/* .skillup-banner-slider {
+  margin-top: 50px;
+}
+
+.new-service-slider {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.new-service-banner {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.new-service-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.new-service-banner p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 4px;
+  background-color: #ccc;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.new-service-info-box {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+.new-service-info-badge {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.new-service-info-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.new-service-info-text {  
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+} */
