@@ -1,0 +1,88 @@
+/* 기본 스타일 */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF7F1;
+}
+
+/* 네비게이션 바 스타일 */
+#navbar {
+  background-color: #fad0c4;
+  overflow: hidden;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  background-color: #ff9a9e;
+  color: black;
+}
+
+/* 섹션 스타일 */
+section {
+  padding: 20px;
+  margin: 10px;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  margin: 10px 0;
+  color: #666;
+}
+/* 햄버거 메뉴 스타일 */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu .line {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 768px) {
+  #navbar ul {
+      display: none;
+  }
+
+  #navbar ul.active {
+      display: block;
+      width: 100%; /* 추가: 너비를 100%로 설정하여 네비게이션 바가 전체 너비를 차지하도록 함 */
+  }
+
+  #navbar ul li {
+      float: none; /* 수정: 항목들이 세로로 나열되도록 float 속성을 제거 */
+  }
+
+  #navbar ul li a {
+      display: block; /* 기존 유지: 블록 레벨 요소로 설정하여 각 링크가 줄 바꿈됨 */
+      width: 100%; /* 추가: 각 링크가 너비 전체를 차지하도록 설정 */
+  }
+
+  .hamburger-menu {
+      display: block;
+  }
+}
