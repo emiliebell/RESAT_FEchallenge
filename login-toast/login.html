@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="form-container">
+            <form id="loginForm">
+                <div class="input-container">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" id="userId" name="userId" placeholder="ID">
+                </div>
+                <div id="userIdError" class="error"></div>
+                <div class="input-container">
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" id="password" name="password" placeholder="PW">
+                </div>
+                <div id="passwordError" class="error"></div>
+                <input type="button" value="LOGIN" onclick="validateLogin()">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
